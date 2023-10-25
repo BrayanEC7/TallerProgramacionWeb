@@ -1,0 +1,640 @@
+/*ESTILO DE GENERAL*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 260%;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(90deg, #67b8fa, #ff6565);
+    background-size: 200% 100%;
+    animation: gradientAnimation 40s linear infinite;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* BARRA MENU*/
+@media (max-width: 768px) {
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 30%;
+      z-index: 999;
+    }
+   }
+
+#baner {
+    float: left;
+    margin: 20px 10px;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    height: 120px;
+    width: 100%;
+}
+
+#barraMenu {
+    margin-top: 0;
+}
+
+.menu {
+    float: right;
+    display: flex;
+    width: 710px;
+    list-style: none;
+    padding-top: 40px;
+    margin: 0px 10px;
+
+}
+
+#barra {
+    margin-top: 10px;
+}
+
+#resalto {
+    margin: 0px 20px;
+    background-color: #68a8e780;
+    height: 35px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(65, 67, 226);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav a {
+    font-weight: 700;
+    padding: 18px;
+    font-size: 120%;
+}
+
+#barra a:hover {
+    color: rgb(255, 0, 0);
+    background-color: #ecececf1;
+    box-shadow: 0 0 5px #ecececf1,
+        0 0 15px #ecececf1,
+        0 0 30px #ecececf1,
+        0 0 69px #ecececf1;
+}
+
+#resalto a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ff2e1fb6;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ff2e1fab,
+        0 0 15px #ff2e1fb6,
+        0 0 30px #ff2e1faf,
+        0 0 69px #ff2e1fa2;
+}
+
+
+.icon {
+    background: none;
+    border: none;
+    float: right;
+    margin-top: 40px;
+    margin-left: 2px;
+    display: none;
+}
+
+
+/*ESTILO DE PIE DE PAGINA*/
+
+footer {
+    float: left;
+    width: 100%;
+    background-color: rgb(38, 38, 39);
+}
+
+#pie {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2% 0;
+    color: white;
+}
+
+
+
+/*ESTILO DE CUERPO*/
+
+#containercuerpo {
+    width: 100% 20px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 100%;
+    max-width: 1000px;
+
+}
+
+#text {
+    padding-top: 70px;
+    width: 40%;
+    float: left;
+    font-size: 130%;
+    margin-left: 40px;
+    text-align: justify;
+}
+
+#imagen2 {
+    width: 50%;
+    float: left;
+}
+
+#imagen {
+    float: left;
+    width: 47%;
+    height: auto;
+    margin-left: 60px;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 250%;
+    animation: cambio 30s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+
+
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+}
+
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+
+
+.slider img {
+    width: 100%;
+}
+
+
+
+
+/*ESTILO DE NOSOTROS*/
+
+#text2 {
+    font-size: 130%;
+    text-align: justify;
+}
+
+#text2 iframe {
+    width: 100%;
+}
+
+
+#containernosotros {
+    width: 75% 20px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+
+}
+
+#imagen_nosotros {
+    margin-bottom: 5%;
+}
+
+
+
+/*ESTILO DE MISION Y VISiON*/
+
+#containermision {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+}
+
+#mision {
+    width: 42%;
+    float: left;
+    margin-left: 20px;
+    font-size: 130%;
+    text-align: justify;
+}
+
+#vision {
+    width: 42%;
+    float: left;
+    margin-left: 90px;
+    font-size: 130%;
+    text-align: justify;
+}
+
+#imagenvision {
+    margin-top: 17px;
+    width: 100%;
+}
+
+#imagenmision {
+    width: 100%;
+}
+
+
+
+/*ESTILO DE SERVICIO*/
+
+#containerservicio {
+    width: 85% 20px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+}
+
+#articulo {
+    font-size: 120%;
+    margin-left: 40px;
+    text-align: justify;
+    margin: 50px 40px;
+}
+
+#articulo #img100 {
+    width: 100%;
+}
+
+#textservicio {
+    width: 75%;
+    float: left;
+    margin-bottom: 5%;
+}
+
+#imgservicio {
+    width: 23%;
+    float: left;
+    margin-left: 2%;
+}
+
+.slider2 {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.slider2 ul {
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: cambio2 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes cambio2 {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -25%;
+    }
+
+    45% {
+        margin-left: -25%;
+    }
+
+    50% {
+        margin-left: -50%;
+    }
+
+    70% {
+        margin-left: -50%;
+    }
+
+    75% {
+        margin-left: -75%;
+    }
+
+    95% {
+        margin-left: -75%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+
+    125% {
+        margin-left: -100%;
+    }
+
+}
+
+.slider2 li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider2 img {
+    width: 100%;
+}
+
+
+
+
+
+/*REDUCCION DE PAGINA*/
+
+@media screen and (max-width: 1053px) {
+    #container {
+        margin-top: 140px;
+    }
+}
+
+
+@media screen and (max-width: 1070px) {
+
+    #containercuerpo {
+        width: 100%;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    #containernosotros {
+        width: 100% 20px;
+        padding: 20px;
+
+    }
+
+    #barraMenu {
+        margin-top: 0;
+        width: 40%;
+        padding: 0;
+        float: right;
+
+    }
+
+    #baner {
+        margin: 5px 20px;
+        width: 30%;
+    }
+
+    .menu {
+        width: 40%;
+        flex-direction: column;
+        opacity: 0;
+        padding-top: 0px;
+        visibility: hidden;
+        top: 80px;
+        position: absolute;
+    }
+
+    #barraMenu a {
+        color: #dfedf1;
+        background: none;
+        box-shadow: none;
+    }
+
+
+    #barra {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 8% 0px;
+        background-color: #5a5a5ad3;
+    }
+
+    #resalto {
+        background: none;
+        height: 100%;
+        margin: 0px;
+        padding: 9% 0px;
+        border-radius: 0px;
+        background-color: #5a5a5ada;
+
+    }
+
+    .icon {
+        display: block;
+        margin-top: 20px;
+        margin-right: 80px;
+        cursor: pointer;
+    }
+
+    .menu_visible {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    #imagen_nosotros {
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width: 823px) {
+    #text {
+        width: 89%;
+    }
+
+    #imagen {
+        width: 75%;
+    }
+
+    #containermision {
+        width: 90;
+    }
+
+    #vision {
+        margin-top: 17px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #mision {
+        margin: 0px;
+        width: 100%;
+    }
+
+    #textservicio {
+        width: 100%;
+        float: left;
+        margin-bottom: 5%;
+    }
+
+    #imgservicio {
+        width: 100%;
+        float: left;
+        margin-left: 0px;
+        height: 700%;
+    }
+
+
+}
+
+/*MEJORAR PAGINA*/
+.imagen {
+    width: 100px;
+    height: 100px;
+    transition: all 0.8s ease-in-out;
+}
+
+.imagen:hover {
+    width: 120px;
+    height: 120px;
+}
+
+#text,
+#imagen2,
+.slider,
+#text2,
+#containermision,
+#containerservicio {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.menu {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.menu a:hover,
+.menu button:hover {
+    transform: scale(1.1);
+}
+
+a,
+button {
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover,
+button:hover {
+    color: #fff;
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+/* Variables CSS */
+:root {
+    --primary-color: #0066FF;
+    --secondary-color: #0c44ad;
+    --box-shadow-color: rgb(5, 63, 221);
+    --text-color: rgba(145, 172, 231, 0.945);
+}
+
+/* ESTILO DE  LOGIN */
+
+#containerlogin {
+    float: left;
+    text-align: center;
+    margin: 10% 34%;
+    width: 450px;
+    background: #b4b4b4;
+    box-shadow: 7px 13px 37px rgb(5, 63, 221);
+    border-top: 4px solid #FF0000;
+    color: rgba(145, 172, 231, 0.945);
+}
+div {
+    border-radius: 10px 20px 30px 40px;
+  }
+
+#logo_colegio {
+    padding: 15px;
+}
+
+#datos {
+    width: 95%;
+}
+
+#nombre2,
+#contraseña {
+    margin: 7.5px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#ingreso {
+    margin: 7.5px;
+    border-radius: 5px;
+    background-color: #FF0000;
+    width: 30%;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#ingreso:hover {
+    background-color: #808080;
+    box-shadow: 0 0 5px #808080, 0 0 15px #808080, 0 0 30px #808080, 0 0 69px #808080;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRANET</title>
+    <link rel="icon" type="image/png" href="img/colegio.png">
+    <link rel="stylesheet" href="css/cuerpo.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="baner">
+            <a href="index.html"><img src="img/baner.png" alt="baner"></a>
+        </div>
+
+        <div id="barraMenu">
+            <nav>
+                <button class="icon">
+                    <img src="img/menu.png" alt="">
+                </button>
+                <ul class="menu">
+                    <li id="barra"><a href="index.html">Home</a> </li>
+                    <li id="barra"><a href="nosotros.html">Nosotros</a> </li>
+                    <li id="barra"><a href="servicios.html">Servicios</a> </li>
+                    <li id="barra"><a href="mision.html">Misión y Visión</a> </li>
+                    <li id="resalto"><a href="intranet.html">INTRANET</a> </li>
+                </ul>
+            </nav>
+    </header>
+
+    <div id="containerlogin">
+        <div id="logo_colegio">
+            <img src="img/colegio.png" width="100px" >
+
+        </div>
+        <form action="login.php" method="post">
+            <section id="datos">
+                <td><input type="text" id="nombre2" placeholder="Nombre de Usuario" size="40" name="usuario" required>
+                </td><br>
+                <td><input type="password" id="contraseña" placeholder="Contraseña" size="40" name="contraseña"
+                        required></td><br>
+                <td><input type="submit" id="ingreso" value="Ingresar" name="inicio" onclick="login();"></td>
+            </section>
+        </form>
+    </div>
+<br>
+<br>
+    <footer>
+        <p id="pie">Copyright © 2023 I.E.M Sara A. Bullon</p>
+    </footer>
+</body>
+
+</html>
