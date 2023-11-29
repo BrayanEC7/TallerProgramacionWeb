@@ -3,7 +3,7 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "intranet";
+$dbname = "colegio";
 
 $cn = mysqli_connect($dbhost, $dbuser, $dbpass , $dbname);
 

@@ -1,3 +1,19 @@
+<?php
+	session_start();
+	if (!isset($_SESSION['usuario'])){
+		echo '
+			<script>
+					alert("Por favor debes iniciar sesión");	
+					window.location="ingreso.html";		
+			</script>
+		';
+		session_destroy();
+		die();
+	}
+
+include("conexion.php");
+?>
+
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -32,26 +48,13 @@
             </nav>
         </div>
     </header>
-
-    <div id="containermision">
-        <article id="mision">
-            <h1>MISIÓN</h1>
-            <hr>
-            <p style="margin-top: 30px; margin-bottom: 30px;">Somos una institución educativa emblemática líder, competitiva e innovadora en la región, que brinda y fortalece su servicio educativo optimizando su calidad en beneficio de las niñas y adolescentes, que emplea el enfoque por competencias para la mejora de los aprendizajes, para la formación integral de las estudiantes, con el compromiso y participación del padre de familia y aliados estratégicos, potenciando las buenas relaciones humanas</p>
-                 <img src="img/mision.png" alt="mision" id="imagenmision">
-        </article>
-        <article id="vision">
-            <h1>VISIÓN</h1>
-            <hr>
-            <p style="margin-top: 30px; margin-bottom: 30px;">La institución Educativa SARA A. BULLON 10110 de la ciudad de Lambayeque, al 2021 es líder y emblemática en la región, que brinda servicios educativos de calidad con identidad cultural y ambiental, en los niveles de Primaria y Secundaria, considerando los enfoques transversales como base de la práctica pedagógica, comprometidos con los avances tecnológicos en la era digital, así como la eficiente administración de sus img y en un excelente clima institucional.</p>
-                  <img src="img/vision.png" alt="vision" id="imagenvision">
-        </article>
-    </div>
-
+	<br>
+	BIENVENIDO
+	<br>
     <footer>
         <p id="pie">Copyright © 2023 I.E.M Sara A. Bullon</p>
         <a href="https://www.facebook.com/profile.php?id=100057464678916" target="_blank"><img src="img/facebook_2.png" alt="facebook" height="30px"></a>
     </footer>
-
 </body>
+
 </html>

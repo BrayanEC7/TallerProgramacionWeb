@@ -37,7 +37,7 @@ body {
 
 
 /* BARRA MENU*/
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .menu {
       position: fixed;
       top: 0;
@@ -66,18 +66,29 @@ header {
 .menu {
     float: right;
     display: flex;
-    width: 710px;
+    width: 800px;
     list-style: none;
     padding-top: 40px;
     margin: 0px 10px;
 
 }
 
+
+
+.menu.menu_visible {
+    display: flex;
+    z-index: 1001;
+}
+
+.menu a {
+    z-index: 1001; 
+}
+
 #barra {
     margin-top: 10px;
 }
 
-#resalto {
+#resalto, #resalto2 {
     margin: 0px 20px;
     background-color: #68a8e780;
     height: 35px;
@@ -117,6 +128,18 @@ nav a {
         0 0 69px #ff2e1fa2;
 }
 
+#resalto2 a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #c4ff0e; 
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #c4ff0eab,
+        0 0 15px #c4ff0eb6,
+        0 0 30px #c4ff0eaf,
+        0 0 69px #c4ff0ea2;
+}
+
+
 
 .icon {
     background: none;
@@ -141,6 +164,7 @@ footer {
     padding: 2% 0;
     color: white;
 }
+
 
 
 
@@ -467,7 +491,7 @@ footer {
         background-color: #5a5a5ad3;
     }
 
-    #resalto {
+    #resalto, #resalto2 {
         background: none;
         height: 100%;
         margin: 0px;
@@ -497,7 +521,7 @@ footer {
 
 }
 
-@media screen and (max-width: 823px) {
+@media screen and (max-width: 900px) {
     #text {
         width: 89%;
     }
@@ -591,21 +615,19 @@ button:hover {
     --text-color: rgba(145, 172, 231, 0.945);
 }
 
-/* ESTILO DE  LOGIN */
+/* ESTILO DE LOGIN */
 
 #containerlogin {
-    float: left;
     text-align: center;
-    margin: 10% 34%;
-    width: 450px;
+    margin: 10% auto;
+    max-width: 450px;
     background: #b4b4b4;
     box-shadow: 7px 13px 37px rgb(5, 63, 221);
     border-top: 4px solid #FF0000;
     color: rgba(145, 172, 231, 0.945);
+    padding: 20px;
+    border-radius: 10px;
 }
-div {
-    border-radius: 10px 20px 30px 40px;
-  }
 
 #logo_colegio {
     padding: 15px;
@@ -613,20 +635,22 @@ div {
 
 #datos {
     width: 95%;
+    margin: 10px auto;
 }
 
 #nombre2,
 #contraseña {
     margin: 7.5px;
-    height: 30px;
+    width: 90%;
+    padding: 10px;
     border-radius: 5px;
 }
 
 #ingreso {
-    margin: 7.5px;
+    margin: 10px;
     border-radius: 5px;
     background-color: #FF0000;
-    width: 30%;
+    width: 40%;
     height: 40px;
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
@@ -637,4 +661,17 @@ div {
     background-color: #808080;
     box-shadow: 0 0 5px #808080, 0 0 15px #808080, 0 0 30px #808080, 0 0 69px #808080;
     letter-spacing: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    #containerlogin {
+        margin: 10% 5%;
+        max-width: none;
+    }
+
+    #nombre2,
+    #contraseña,
+    #ingreso {
+        width: 100%;
+    }
 }
